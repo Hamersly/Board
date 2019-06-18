@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная - Доска объявлений</title>
-</head>
-<body>
-    <h1>Объявления</h1>
+{% extends "layout/basic.html"%}
+
+{% block content%}
     {%for bb in bbs%}
         <div>
             <h2>{{ bb.title}}</h2>
             <p>{{ bb.content}}</p>
+            <p><a href="{% url 'by_rubric_url' bb.rubric.pk %}">{{ bb.rubric.name}}</a></p>
             <p>{{ bb.published|date:"d.m.y h:i:s"}}</p>
         </div>
     {%endfor%}
+{% endblock%}
 
-</body>
-</html>
+

@@ -1,0 +1,20 @@
+header h1 {
+        font-size: 40pt;
+        text-transform : uppercase;
+        text-align: center;
+        background: url("https://img2.freepng.ru/20180329/ble/kisspng-paper-scroll-template-clip-art-scroll-5abd2fdb4b3ed2.0331492815223479953082.jpg") left / auto 100% no-repeat;
+        }
+        nav {
+        font-size: 16pt;
+        width: 150px;
+        float: left;
+        }
+        nav a {
+
+        display: block;
+
+        margin: 10px 0px;
+        }
+        section {
+        margin-left: 170px;
+        }
